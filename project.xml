@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="MultiwindowCrash" package="com.sample.multiwindowcrash" version="1.0.0" company="Company Name" />
+	<app main="Main" path="Release" file="MultiwindowCrash" unless="debug"/>
+	<app main="Main" path="Debug" file="MultiwindowCrash_Debug" if="debug"/>
+	
+	<source path="Source" />
+	
+	<haxelib name="hxcpp-debug-server" />
+
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	
+	<assets path="Assets/fonts" rename="fonts" include="*" />
+	<assets path="Assets/images" rename="images" include="*" />
+	
+	<window id="0" title="main"   width="640" height="480" background="#333333" resizable="true"/> 
+	<window id="1" title="second" width="640" height="480" background="#222222" resizable="true"/>
+	
+</project>
